@@ -7,8 +7,8 @@ export function renderCharacterCard(character) {
     div.classList.add('character-card');
 
     p.textContent = character.name;
-    img.src = ``;
-    a.href = ``;
+    img.src = `./assets/${character.name}.jpg`;
+    a.href = `./detail/?id=${character.id}`;
 
     div.append(p, img);
 
@@ -29,8 +29,8 @@ export function renderCharacterDetail(character) {
     nameEl.textContent = character.name;
     nameEl.classList.add('name');
 
-    descriptionEl.textContent = character.description;
-    descriptionEl.classList.add('description');
+    descriptionEl.textContent = character.details;
+    descriptionEl.classList.add('details');
 
 
     img.src = ``;

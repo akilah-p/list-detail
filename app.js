@@ -10,7 +10,7 @@ window.addEventListener('load', async () => {
 
     for (let character of characters) {
         const characterEl = renderCharacterCard(character);
-        characterListContainer.append(characterEl)
+        characterListContainer.append(characterEl);
     }
 });
 
