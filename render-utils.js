@@ -1,4 +1,4 @@
-export function renderCharacterCard(dog) {
+export function renderCharacterCard(character) {
     const div = document.createElement('div');
     const a = document.createElement('a');
     const img = document.createElement('img');
@@ -33,7 +33,7 @@ export function renderCharacterDetail(character) {
     descriptionEl.classList.add('description');
 
 
-    img.src = `../assets/${dog.breed}.jpeg`;
+    img.src = ``;
 
     div.append(nameEl, img, descriptionEl);
 
