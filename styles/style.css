@@ -37,7 +37,7 @@ section {
 
 a {
     text-decoration: none;
-    color: black
+    color: white;
 }
 
 header {
@@ -53,9 +53,9 @@ header {
 
 header a {
     font-weight: 900;
-    color: black;
+    color: white;
     margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 h1 {
@@ -89,8 +89,8 @@ p {
     align-items: center;
     border-radius: 20px;
     border: solid 1px black;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     color: white;
     font-weight: 300;
     font-size: 2rem;
@@ -98,8 +98,8 @@ p {
 
 
 .character-card img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 20px;
 }
 
