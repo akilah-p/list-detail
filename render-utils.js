@@ -10,7 +10,6 @@ export function renderCharacterCard(character) {
     img.src = `./assets/${character.name}.jpg`;
     a.href = `./detail/?id=${character.id}`;
 
-
     div.append(p, img);
 
     a.append(div);
