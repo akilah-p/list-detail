@@ -1,0 +1,141 @@
+body {
+
+
+    --header-height: 80px;
+    --shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
+    --gutter: 30px;
+    --footer-height: 25px;
+
+    font-family: 'Titillium Web', sans-serif;
+    background-image: url('https://mdbootstrap.com/img/new/standard/city/041.jpg');
+    height: 400px;
+    background-size: 600px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: calc(var(--footer-height));
+}
+
+section {
+    background-color: white;
+    height: 100%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: var(--gutter);
+    border: solid 2px var(--color1);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: var(--header-height);
+    box-shadow: var(--shadow);
+    height: 100%;
+    width: 150px;
+    top: 0;
+}
+
+header a {
+    font-weight: 900;
+    color: white;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.gutter-right {
+    margin-right: 20px;
+}
+
+p {
+    margin: 0px
+}
+
+#character-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+.character-card {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    color: white;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+
+.character-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.character-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+
+}
+
+.character-detail .name {
+    font-size: 2rem;
+
+}
+
+
+
+.character-detail img {
+    margin: 40px;
+    width: 80%;
+}
+
+
+.character-detail .details {
+    font-size: 1.2rem;
+    margin: 20px;
+    padding: 20px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.character-detail .quotes {
+    font-size: 1.2rem;
+    margin: 20px;
+    padding: 20px;
+    font-weight: bolder;
+    font-family: fantasy;
+}

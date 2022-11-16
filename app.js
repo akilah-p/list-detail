@@ -1,8 +1,18 @@
 /* Imports */
+import { getAllCharacters } from './fetch-utils.js';
+import { renderCharacterCard } from './render-utils.js';
 
 /* Get DOM Elements */
+const characterListContainer = document.getElementById('character-list-container');
 
-/* State */
+window.addEventListener('load', async () => {
+    const characters = await getAllCharacters();
+
+    for (let character of characters) {
+        const characterEl = renderCharacterCard(character);
+        characterListContainer.append(characterEl);
+    }
+});
 
 /* Events */
 
