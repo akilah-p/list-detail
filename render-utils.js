@@ -21,7 +21,7 @@ export function renderCharacterDetail(character) {
     const div = document.createElement('div');
     const img = document.createElement('img');
     const descriptionEl = document.createElement('p');
-    const quoteEl = document.createElement('p')
+    const quoteEl = document.createElement('p');
     const nameEl = document.createElement('p');
 
 
