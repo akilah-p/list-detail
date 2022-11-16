@@ -22,6 +22,7 @@ export function renderCharacterDetail(character) {
     const div = document.createElement('div');
     const img = document.createElement('img');
     const descriptionEl = document.createElement('p');
+    const quoteEl = document.createElement('p')
     const nameEl = document.createElement('p');
 
 
@@ -31,13 +32,17 @@ export function renderCharacterDetail(character) {
     nameEl.textContent = character.name;
     nameEl.classList.add('name');
 
+    quoteEl.textContent = character.quotes;
+    quoteEl.classList.add('quotes');
+
     descriptionEl.textContent = character.details;
     descriptionEl.classList.add('details');
 
 
-    img.src = `../details/${character.id}-couple.jpg`;
 
-    div.append(nameEl, img, descriptionEl);
+    img.src = `../assets/${character.id}.jpg`;
+
+    div.append(nameEl, img, quoteEl, descriptionEl);
 
     return div;
 }
