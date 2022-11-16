@@ -18,7 +18,6 @@ body {
     --footer-height: 25px;
 
     font-family: 'Titillium Web', sans-serif;
-    background-image: url('../assets/bg.png');
     background-size: 600px;
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -54,7 +53,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: orange;
+    background-color: violet;
     height: var(--header-height);
     box-shadow: var(--shadow);
     height: 100%;
@@ -69,7 +68,7 @@ header a {
     font-size: 1.5rem;
 }
 
-h2 {
+h1 {
     font-size: 1.8rem;
     font-weight: bold;
 }
@@ -116,26 +115,19 @@ p {
     width: 600px;
 }
 
-.dog-detail .name {
+.character-detail .name {
     font-size: 2rem;
 }
 
-.dog-detail .age-and-breed {
-    height: 50px;
-    width: 100%;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.dog-detail img {
+
+.character-detail img {
     margin: 40px;
     width: 80%;
 }
 
 
-.dog-detail .description {
+.character-detail .details {
     font-size: 1.2rem;
     margin: 20px;
     padding: 20px;

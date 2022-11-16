@@ -10,6 +10,6 @@ export async function getAllCharacters() {
 }
 
 export async function getCharacter(id) {
-    const response = await client.from('characters').select().match({ id: id }).single();
+    const response = await client.from('details').select().match({ id: id }).single();
     return response.data;
 }
