@@ -3,6 +3,9 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
+// Quotes found from this website https://www.needsomefun.net/best-10-the-l-word-quotes/
+// Descriptions taken from https://the-l-word.fandom.com/wiki/The_L_Word_wiki
+
 export async function getAllCharacters() {
     const response = await client
         .from('characters')
