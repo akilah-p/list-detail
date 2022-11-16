@@ -25,6 +25,7 @@ export function renderCharacterDetail(character) {
     const nameEl = document.createElement('p');
 
 
+
     div.classList.add('character-detail');
 
     nameEl.textContent = character.name;
@@ -34,7 +35,7 @@ export function renderCharacterDetail(character) {
     descriptionEl.classList.add('details');
 
 
-    img.src = ``;
+    img.src = `../details/${character.id}-couple.jpg`;
 
     div.append(nameEl, img, descriptionEl);
 
